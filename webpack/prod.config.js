@@ -44,7 +44,7 @@ module.exports = merge(baseConfig, {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, "../dist/index.html"),
+      filename: path.resolve(__dirname, "../public/dist/index.html"),
       template: "index.html",
       inject: true,
       minify: {
@@ -56,7 +56,7 @@ module.exports = merge(baseConfig, {
       chunksSortMode: "auto",
     }),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, "../dist/404.html"),
+      filename: path.resolve(__dirname, "../public/dist/404.html"),
       template: "404.html",
       inject: true,
       minify: {
